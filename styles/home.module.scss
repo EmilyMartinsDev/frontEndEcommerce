@@ -1,0 +1,156 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1500px;
+    width: 100%;
+    background-color: #fff;
+    flex-wrap: wrap;
+
+    h1{
+        font-weight: bold;
+        margin-bottom: 50px;
+        color: #fff;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #000;
+        font-size: 3.5rem;
+
+    }
+}
+
+.lancamento, .destaque, .promocao{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+   
+}
+
+.produto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #ccc;
+    margin-left: 0.5rem;
+
+    img{
+    max-height: 200px;
+    object-fit: contain;
+      width: 100%;
+      max-width: 400px;
+    
+    }
+
+   span{
+    margin: 10px 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.categorySession{
+
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    min-height: 700px;
+    align-items: center;
+    flex-wrap: wrap;
+    .categoryContent{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        min-height: 150px;
+
+        text-align: center;
+
+        .Redirect{
+            border: 0;
+            height: 100%;
+            text-align: center;
+            min-height: 200px;
+            width: 100%;
+            background-color: #ccc;
+            color: #000;
+            border-bottom: 1px solid #000;
+         
+            padding: 0.2rem;
+            display: block;
+            text-transform: uppercase;
+            font-size: 3rem;
+            span{
+                margin-top: 1rem;
+                
+            }
+
+        }
+        .Redirect:hover{
+          background-color: #fff;
+          color: #000;
+        }
+    }
+
+    
+
+
+}
+
+
+.categoryTitle{
+    margin: 6rem 0 1rem 0;
+    font-size: 4.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem 0;
+    background-color: gold;
+}
+@media(max-width: 760px){
+.container{
+    margin-left: 0;
+    width: 100%;
+    h1{
+        font-size: 2rem;
+    }
+
+}
+.produto{
+    max-width: 800px;
+    margin-left: 0;
+}
+
+.lancamento, .destaque, .promocao {
+    flex-direction: column;
+    justify-content: center;
+
+}
+.categoryTitle{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+.Redirect{
+    
+    span{
+        font-size: 1.5rem;
+        max-width: 200px;
+    }
+   
+
+
+}
+  
+}

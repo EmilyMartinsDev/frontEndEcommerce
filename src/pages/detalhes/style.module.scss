@@ -1,0 +1,121 @@
+
+
+.section1{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    img{
+        width: 100%;
+        max-width: 500px;
+        object-fit: contain;
+
+    }
+
+
+    .description{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        background-color: #ccc;
+        h1{
+            font-weight: bold;
+
+            margin-bottom: 1rem;
+        }
+        p{
+            font-weight: bold;
+        }
+        .price{
+            color: red;
+            font-size: 2rem;
+        }
+       button{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+       }
+    }
+
+    select{
+        margin-bottom: 0.8rem;
+        text-align: center;
+        font-weight: bold;
+        width: 80%;
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+
+    .amount{
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+  .cart{
+        padding: 10px 20px;
+        background-color: gold;
+        border: 0;
+        border-radius: 8px;
+        font-weight: bold;
+       
+    }
+
+ 
+    .btnAdmin{
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+
+        justify-content: space-around;
+        margin-bottom: 1rem;
+ 
+        .edit{
+            background-color: rgb(0, 89, 255);
+            padding: 0.5rem 0.8rem;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            
+            
+        }
+    
+        .delete{
+            margin-top: 0;
+            background-color: red;
+            padding: 0.5rem 0.8rem;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+     
+        }
+    }
+
+}
+
+@media(max-width: 760px){
+    .section1{
+        flex-direction: column ;
+        align-items: center;
+
+        img{
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        select{
+            font-size: 1.2rem;
+        }
+        .amount::placeholder{
+            font-size: 1.2rem;
+        }
+        button{
+            padding: 6px 15px;
+        }
+    }
+}
